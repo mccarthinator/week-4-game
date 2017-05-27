@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-pVJelSCJ58Og1XDc2E95RVYHZDPb9AVyXsI8NoVpB2xmtxoZKJePbMfE4mlXw7BJ" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3><strong>Instructions:</strong></h3>
+			<p>There is a random number generated at the start of each game.</p>
+			<p>Below are four crystals.</p>
+			<ul>
+				<li id="red" class="red">Red</li>
+				<li id="blue" class="blue">Blue</li>
+				<li id="yellow" class="yellow">Yellow</li>
+				<li id="green" class="green">Green</li>
+			</ul>
+			<p>When you click a crystal, its secret value gets added to your total score.</p>
+			<p>The value of each crystal is a secret until you click on it, but changes with each new game.</p>
+			<p>You win if match your score exactly to the random number.</p>
+			<p>You lose if your score goes over the random number.</p>
+		</div>
+	<div id="numberToMatch">
+		<h2>Random Number to Match:
+			<div id="randomNumber"></div>
+		</h2>
+	</div>
+	<div id="winsAndLosses">
+		<h2>Wins:
+			<div id="numberWins"></div>
+			<ul> 
+
+			</ul>
+			Losses: 
+			<div id="numberLosses"></div>
+		</h2>
+	</div>
+	<div id="crystals">
+		<img src="./assets/images/red.png" id="one" alt="Red Crystal">
+		<img src="./assets/images/blue.png" id="two" alt="Blue Crystal">
+		<img src="./assets/images/yellow.png" id="three" alt="Yellow Crystal">
+		<img src="./assets/images/green.png" id="four" alt="Green Crystal">
+	</div>
+	<div id="userTotal">
+		<h2>Your total score is:
+			<div id="finalTotal"></div>
+		</h2>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+	<script type="text/javascript" src="./assets/javascript/gamecopy.js"></script>
+
+</body>
+</html>
