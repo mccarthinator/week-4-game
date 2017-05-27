@@ -5,10 +5,10 @@
 var targetRandom = Math.floor(Math.random()*101+19);
 
 // Sets up random numbers for each crystal between 1 and 12
-var crystal1 = Math.floor(Math.random()*13+2);
-var crystal2 = Math.floor(Math.random()*13+2);
-var crystal3 = Math.floor(Math.random()*13+2);
-var crystal4 = Math.floor(Math.random()*13+2);
+var crystal1 = Math.floor(Math.random()*11+1);
+var crystal2 = Math.floor(Math.random()*11+1);
+var crystal3 = Math.floor(Math.random()*11+1);
+var crystal4 = Math.floor(Math.random()*11+1);
 
 //  Tally Variables
 var userTotal = 0; 
